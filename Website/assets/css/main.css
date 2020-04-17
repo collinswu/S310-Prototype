@@ -4100,21 +4100,31 @@
 
 		}
 
-.tasklist{
+.tasklist {
+    color: balck;
     list-style: none;
-    border: 2px solid;
     padding: 10px;
     margin: 5px;
-    background-color: whitesmoke;
     border-radius: 10px;
+    background-color: cadetblue;
     
 }
+.tasklist a{
+    color: black;
+}
+.tasklist a:hover{
+    font-size: 18px;
+    font-style: oblique;
+    display: inline-block;
+}
+
 .row{
-    clear: both
+    clear: both;
 }
 .column{
     width: 50%;
     float: left;
     outline: 1px;
 }
+
 

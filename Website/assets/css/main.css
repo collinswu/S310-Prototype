@@ -4100,4 +4100,21 @@
 
 		}
 
+.tasklist{
+    list-style: none;
+    border: 2px solid;
+    padding: 10px;
+    margin: 5px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+}
+.row{
+    clear: both
+}
+.column{
+    width: 50%;
+    float: left;
+    outline: 1px;
+}
 

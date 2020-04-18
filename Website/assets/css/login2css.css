@@ -79,3 +79,12 @@ a:link, a:visited{
 a:hover{
     background-color: darkseagreen;
 }
+.font{
+    font-size: 15px;
+}
+.forget{
+    font-size: 12px;
+    color: blue;
+    text-decoration: underline;
+
+}

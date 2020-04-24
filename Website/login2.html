@@ -1,43 +1,132 @@
+<!DOCTYPE HTML>
 
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="assets/css/login2css.css">
-  <script defer src="login-page.js"></script>
+    <title>LT Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
 </head>
 
 <body>
-  <main id="main-holder">
-    <h1 id="login-header">Leadership Team Login</h1>
-    <div>
-        <img src="images/login.png">
+
+    <div id="menu">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                   <div class="collapse navbar-collapse" id="Menu">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                     <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="NewClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                    <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
+                                    <li><a href="#" class="nav-link">Create Task</a></li>
+                                    <li><a href="#" class="nav-link">Update Task</a></li>
+                                    <li><a href="#" class="nav-link">Accept or reject client</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
     </div>
-    
-    
-    <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-     <div>
-        <div class="font">
-      <input type="checkbox" id='remember' name='remember' checked>
-      <label for='remember'>Remember Me</label>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <h2>Guatemala MBA Program</h2>
+        <p>Welcome to the Global Business and Social Enterprise Program </p>
+
+    </section>
+
+    <!-- Main -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <header>
+                        <h2>Leadership Team Login</h2>
+                        <p id="subtitle">Please fill in the correct username and password.</p>
+                    </header>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <form>
+                <div class="form-group row align-items-center">
+                    <label for="inputUser" class="col-sm-2 col-form-lable">Username</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputUser" placeholder="Please Enter Your Username" required>
+                    </div>
+                   </div>
+                
+                   <div class="form-group row">
+                       <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                       <div class="col-sm-7">
+                        <input type="password" class="form-control" id="inputUser" placeholder="Please Enter Your Password" required>
+                    </div>
+                   </div>
+                   
+                      
+                   <div class="form-group row">
+                    <input class="form-check-input " type="checkbox" id="autoSizingCheck2">
+                    <label class="col-form-lable col-sm-4" for="autoSizingCheck2">
+                      Remember me
+                    </label>
+                  <a href="success_LTlogin.html" role="button" type="button" class="btn btn-primary btn-lg">Submit</a>
+                   </div>
+                  
+                </form>
+                
+            </div>
         </div>
-    
-        <div class="forget">
-        <label for="forget">Forget Password?</label>
-        </div>
-        </div>
-    </form>
-      <a href="tasklist.html" class='login'>LOGIN</a>
-  </main>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>Design: Team 6</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
+        </ul>
+    </footer>
 </body>
-<!-- Footer -->
-<footer >
-	<div>
-		<p>&copy; All rights reserved. Design: Team 6. Images: from web.</p>
-		</div>
-	</footer>
+
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Update Task</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <style>
+        fieldset.scheduler-border{
+        border: solid 1px;
+        padding: 0 10px 10px 10px;
+        border-color: #990000;
+    }
+    legend.scheduler-border{
+        width: auto;
+        border: solid #990000 1px;
+        font-size: 17px;
+        background-color: #990000;
+        color: white;
+        font-weight: bold;
+      border-radius: 7px;
+    }
+        
+        </style>
+</head>
+
+<body>
+
+    <div id="menu">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                   <div class="collapse navbar-collapse" id="Menu">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                     <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="NewClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                    <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
+                                    <li><a href="create_task.html" class="nav-link">Create Task</a></li>
+                                    <li><a href="update_task.html" class="nav-link">Update Task</a></li>
+                                    <li><a href="#" class="nav-link">Accept or reject client</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <h2>Guatemala MBA Program</h2>
+        <p>Welcome to the Global Business and Social Enterprise Program </p>
+
+    </section>
+
+    <!-- Main -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <header>
+                        <h2>Update Task Preview</h2>
+                    </header>
+                </div>
+            </div>
+
+            <form >
+               
+                <legend class="scheduler-border" style="text-align: center">Task Detail</legend>
+               
+                <label >Task ID</label>
+                <label >SP20-01</label><br>
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border"> Choose One Category From List </legend>
+                    <label for="category">Task Category</label>
+                    <label>Student Selections</label>
+                <br>
+                    <label for="new">New Task Category</label>
+                    <label>Student Selections</label>
+                <br>
+            </fieldset>
+                <br>
+                <br>
+               
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Adding Details</legend>
+                
+                <div class="form-group">
+                <label for="lead">Person in Charge</label>
+                <label>Jone Doe</label>
+                <br>
+                <label for="newlead">New Person In Charge</label>
+                <label>Iron Man</label>
+                </div>
+                
+                 <div class="form-group">
+                <label for="taskname">Task Name</label>
+                <label>Collect Application</label>
+                     <br>
+                     <label for="ntaskname">New Task Name</label>
+                <label>Collect Application</label>
+                </div>
+                
+                <div class="form-group">
+                <label for="des">Task Description</label>
+                <text style="margin-left: 50px"> Classify students based on their first choice and second choice.</text>
+                <br>
+                    <label for="ndes">New Task Description</label>
+                <text style="margin-left: 50px"> Classify students based on their major and personal choices.</text>
+                </div>
+                
+                <div class="form-group">
+                <label for="stime">Start Time</label>
+                <label>06/15/2020</label>
+                    <br>
+                    <label for="nstime">New Start Time</label>
+                <label>06/15/2020</label>
+                </div>
+                
+                <div class="form-group">
+                <label for="ftime">Finish Time</label>
+                <label>04/01/2020</label>
+                    <br>
+                    <label for="nftime"> New Finish Time</label>
+                <label>06/05/2020</label>
+                </div>
+                
+                <div class="form-group">
+                <label for="status">Status</label>
+                <label>Not Started</label>
+                    <br>
+                    <label for="nstatus">New Status</label>
+                    <label>In Process</label>
+                </div>
+            </fieldset>
+                <br>
+                <div style="text-align: center">
+                <a role="button" href="update_task_example.html" class="btn btn-success btn-lg">Back</a>
+                    &ensp;
+                <a role="button" href="success_updatetask.html" class="btn btn-primary btn-lg">Next</a>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>Design: Team 6</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

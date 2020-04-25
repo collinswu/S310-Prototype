@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Leadership Team Info</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <style>
+        h3{
+            margin: 1px 1px 1px 1px;
+            padding: 0px;
+            text-align: center;
+            font-size: 150%;
+            font:bold
+                  
+        }
+        input{
+            border-radius: 3px;
+            border: 1px solid lightgray;
+            padding-right: 10px;
+                
+        }
+        #team{
+            border-radius: 3px;
+            border: 1px solid lightgray;
+            padding-right: 10px;
+        }
+        lagend{
+            font-size: 30px;
+        }
+        #form{
+            padding: 30px;
+            margin-top: 80px;
+            border-radius: 8px;
+            
+        
+            
+        }
+        
+      
+        .roster{
+            border: none;
+            background-color: lightgray;
+            border-radius: 8px;
+            padding: 5px 10px 5px 10px;
+            margin: 10px 
+            
+            
+        }
+        botton{
+            
+            border: none;
+            border-radius: 4px;
+            padding: 15px 20px 15px 20px;
+            background-color: #71120A;
+            color: white;
+            font-size: 20px;
+            
+            margin-right: 500px;
+        
+
+        }
+        #back{
+            color: white;
+            text-decoration: none;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            background-color: #71120A;
+            border: none;
+            text-align:center;
+            
+        
+        }
+                
+
+        #link{
+            text-decoration: none;
+            
+        }
+        #link:hover{
+            color: white
+        }
+                
+        }
+        #margin{
+            
+            margin-top: 100px;
+            margin-bottom: 100px;
+     
+        }
+        #d{
+            color: white
+        }
+        
+      
+       
+    </style>
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="Menu">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="NewClient" class="nav-link" id="d">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link" id="d">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link" id="d">Record Interview Summary</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <h2>Guatemala MBA Program</h2>
+        <p>Welcome to the Global Business and Social Enterprise Program </p>
+
+    </section>
+
+    <!-- Main -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <header>
+                        <h2>New LT Member</h2>
+                        
+                    </header>
+                </div>
+                
+                <div>
+                <form action="" method="get" id="form">
+                <fieldset>    
+                    <lagend>Member Information</lagend>
+                    <br>
+                    <br>
+                    
+                    <label for="FirstName">First Name: </label>
+                    <input type="text" name="FirstName" id="FirstName">
+                    <br>
+                    <label for="LastName">Last Name: </label>
+                    <input type="text" name="LastName" id="LastName">
+                    <br>
+                    <label for="" >Male</label>
+                    <input type="radio" name="male" id="male" value="male">
+                    <label for="female" >Female</label>
+                    <input type="radio" name="female" id="female" value="female">
+                    <br>
+                    <label for ="studentID">Student ID:</label>
+                    <input type="text" name="studentID" id="studentID">
+                    <br>
+                    <label for ="email">Student Email:</label>
+                    <input type="text" name="studentemail" id="studentemail">
+                    <br>
+                    <label for="TeamNo">Team Number:</label>
+                    <select name="team" id="team">
+                        <option></option>
+                        <option value="Team1">Team1</option>
+                        <option value="Team2">Team2</option>
+                        <option value="Team3">Team3</option>
+                        <option value="New Team">New Team</option>
+                    </select><br>
+                    
+                </fieldset>
+                    </form>
+            
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="botton">
+                    <button type="button" class="btn btn-danger" id="back"><a href="Add%20LT%20member2.html" class="whiteLink" id="link">Submit</a></button>
+                    <button type="button" class="btn btn-danger" id="back"><a href="Add%20LT%20member.html" class="whiteLink" id="link">Cancel</a></button>
+                
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>Design: Team 6</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

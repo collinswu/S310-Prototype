@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Professor Dashboard</title>
+    <title>Confirmation</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,50 +14,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
-    <style>
-        
-        button{
-            
-            border: none;
-            border-radius: 4px;
-            padding: 5px;
-            background-color: #71120A;
-            color: white;
-            font-size: 20px;
-            
-            margin-right: 18px;
-        
-
-        }
-        #button{
-            color: white;
-            text-decoration: none;
-           
-                
-        }
-        #margin{
-            
-            margin-top: 100px;
-            margin-bottom: 100px;
-     
-        }
-        #d{
-            color: white
-        }
-        #report{
-            margin-left: 20px;
-            margin-bottom: 20px
-        }
-        #task{
-            margin-left: 20px;
-            margin-bottom: 25px;
-        }
-        #LT{
-            margin-left: 20px;
-            margin-bottom: 30px;
-            margin-top: 30px
-        }
-    </style>
 
 </head>
 
@@ -78,23 +34,27 @@
                         </button>
                     </div>
 
-                    <div class="collapse navbar-collapse" id="Menu">
+                   <div class="collapse navbar-collapse" id="Menu">
                         <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
 
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="NewClient" class="nav-link" id="d">New Client Registration</a></li>
-                                    <li><a href="#" class="nav-link" id="d">Record Meeting Agenda</a></li>
-                                    <li><a href="#" class="nav-link" id="d">Record Interview Summary</a></li>
+                                     <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="NewClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                    <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
+                                    <li><a href="create_task.html" class="nav-link">Create Task</a></li>
+                                    <li><a href="#" class="nav-link">Update Task</a></li>
+                                    <li><a href="#" class="nav-link">Accept or reject client</a></li>
                                     <li><a href="Confirm_Final_Report.html" class="nav-link">Confirm Final Report</a></li>
-                                    <li><a href="Create_Progress_Report.html" class="nav-link">Create Progress Report</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
-                               <li class="nav-item dropdown">  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span></a>
+                            <li class="nav-item dropdown">  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span></a>
                                <ul class="dropdown-menu">
                                      <li><a href="Record_Student_Preferences.html" class="nav-link">Record Student Preferences</a></li>
                                </ul> 
@@ -102,7 +62,7 @@
                             <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
                         </ul>
 
-                        <form class="form-inline my-2 my-lg-0">
+                        <form class="form-inline">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
@@ -127,27 +87,15 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <header>
-                        <h2>Welcome to Professor Dashboard!</h2>
-                        
+                        <h2><img src="images/check.png" width="50"> Report Submitted!</h2>
+                        <p id="subtitle"> This message indicates your report has been sent.</p>
                     </header>
                 </div>
             </div>
-        <div>
-               
-        </div>
-        
-         
-        
-            <div>
-               
-                <button type="button" id="LT"><a href="Add%20LT%20member.html" id="button" >Manage LT Member</a></button>
-            </div>    
-            <div>    
-                <button type="button" id="task"><a href="View%20Task%20List.html" id="button" >View Task List</a></button>
-                
-            </div>
-            <div>
-                <button type="button" id="report"><a href="Low%20Score%20Report.html" id="button" >Low Score Report</a></button>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <br/>
+                <p>You can click <strong><i><u><a href="index.html">here</a></u></i></strong> to go back to the homepage.</p>
             </div>
 
         </div>
@@ -157,7 +105,7 @@
     <footer id="footer">
         <ul class="copyright">
             <li>Design: Team 6</li>
-            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indiana University</li>
             <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
         </ul>
     </footer>

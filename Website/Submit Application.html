@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>New Application</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="Menu">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item "><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="NewClient.html" class="nav-link active">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <h2>Guatemala MBA Program</h2>
+        <p>Welcome to the Global Business and Social Enterprise Program </p>
+
+    </section>
+
+    <!-- Main -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <header>
+                        <h2>New Application</h2>
+                        <p class="subtitle">Please fill out the following information </p>
+                    </header>
+                </div>
+            </div>
+
+            <form action="" method="post">
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <fieldset>
+                        <legend>Required Info</legend>
+
+                        <label for="firstname">First Name: </label>
+                        <input type="text" name="firstname" id="firstname"><br>
+                        <label for="lastname">Last Name: </label>
+                        <input type="text" name="lastname" id="lastname"><br>
+                        <label for="male">Male</label>
+                        <input type="radio" name="male" id="male" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="female" id="female" value="female">
+                        <label for="year">Year: </label>
+                        <select name="year" id="year" required>
+                            <option></option>
+                            <option value="freshman">freshman</option>
+                            <option value="sophomore">sophomore</option>
+                           
+                        </select>
+                        <br />
+
+                        <label for="address">Address: </label>
+                        <input type="text" name="address" id="address" ><br>
+
+                        <label for="state">State: </label>
+                        <input type="text" name="state" id="state" ><br>
+
+                        <label for="zipcode">Zipcode: </label>
+                        <input type="text" name="zipcode" id="zipcode"  ><br />
+
+                        
+
+                        <label for="email">Email: </label>
+                        <input type=email name="email" id="email" ><br>
+                       
+
+                        <label for="state">Phone Number: </label>
+                        <input type=tel name="state" id="state" placeholder="(xxx)xxx-xxxx" ><br>
+
+
+                    </fieldset>
+                    <br />
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <fieldset>
+                        <legend>Optional Information</legend>
+                        <label for="comments">Comments: </label>
+                        <textarea name="comments" id="comments" placeholder="If you choose &quotother&quot from above, please specify here"></textarea><br>
+                        <br />
+                    </fieldset>
+                    <br />
+                </div>
+
+                <button type="submit" class="btn btn-success" id="submit"><a href="Application%20Confirmation.html" class="whiteLink">Submit</a></button>
+                <input class="btn btn-warning" type="reset" value="Reset" id="reset"><br />
+                <button type="button" class="btn btn-danger" id="back"><a href="index.html" class="whiteLink">Back</a></button>
+
+            </form>
+            <br />
+        </div>
+    </section>
+    <br />
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>Design: Team 6</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

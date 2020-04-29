@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Client Summary</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div id="menu">
+        <header class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
+                    </a>
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target="#Menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="Menu">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="NewClient" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner2">
+        <h2>Guatemala MBA Program</h2>
+        <p>Welcome to the Global Business and Social Enterprise Program </p>
+
+    </section>
+
+    <!-- Main -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <header>
+                        <h2>Client Summary</h2>
+                        <p id="subtitle">Here is the summary of all registered clients</p>
+                    </header>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table class="table table-hover table-striped table-bordered table-condensed" style="width: 750px; margin-left:auto; margin-right:auto;">
+
+                    <thead style="background-color: #990000; color: white;">
+                        <tr>
+                            <th>Select</th>
+                            <th>Company</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                            <th>City, Country</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </td>
+                            <td>Stark Inc.</td>
+                            <td>Tony Stark</td>
+                            <td>tstark@stark.com</td>
+                            <td>(123)456-7890</td>
+                            <td>1200 Industrial Ave, Long Beach</td>
+                            <td>CA,USA</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </td>
+                            <td>Tesla Inc.</td>
+                            <td>Elon Musk</td>
+                            <td>emusk@tesla.com</td>
+                            <td>(650)413-4000</td>
+                            <td>3500 Deer Creek Road Palo Alto</td>
+                            <td>CA,USA</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </td>
+                            <td>Apple</td>
+                            <td>Steven Jobs</td>
+                            <td>sJobs@apple.com</td>
+                            <td>(987)654-3210</td>
+                            <td>1 Infinite Loop, Cupertino</td>
+                            <td>CA,USA</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </td>
+                            <td>Alibaba</td>
+                            <td>Yun Ma</td>
+                            <td>mayun@alibaba.com</td>
+                            <td>(571)850-2077</td>
+                            <td>969 West Wen Yi Road</td>
+                            <td>Hangzhou, China</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </td>
+                            <td>Nintendo</td>
+                            <td>Fusajiro Yamauchi</td>
+                            <td>fy@nintendo.com</td>
+                            <td>(654)456-6543</td>
+                            <td>11-1 Kamitoba-hokotate-cho, Minami-ku</td>
+                            <td>Kyoto,Japan</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <button type="button" class="btn btn-success" id="submit"><a href="index.html" class="whiteLink">Back</a></button>
+            <button type="button" class="btn btn-danger" id="back"><a href="deleteClient.html" class="whiteLink">Delete</a></button>
+        </div>
+
+    </section>
+    <br>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>Design: Team 6</li>
+            <li>Reference: GLOBASE Guatemala Case from BUS-S310 course at Indian University</li>
+            <li><a href="https://kelley.iu.edu/programs/full-time-mba/academics/global-experiences/globase/index.cshtml">Official Website</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

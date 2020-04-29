@@ -131,7 +131,7 @@ span.icon-bar {
 
 /* Buttom*/
 
-a.whiteLink{
+a.whiteLink {
     color: white;
 }
 
@@ -177,7 +177,7 @@ select {
 }
 
 #comments {
-    width: 60%;
+    width: 70%;
     height: 200px;
 }
 
@@ -255,6 +255,23 @@ label {
 #phone {
     width: 60%
 }
+
+/*Table*/
+#studentInterview {
+    text-align: center;
+}
+
+#studentInterview th,th{
+    width: 300px;
+    text-align: center;
+}
+
+caption {
+    text-align: center;
+    font-size: large;
+    padding: 3px;
+}
+
 
 /* Footer */
 

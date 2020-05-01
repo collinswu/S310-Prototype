@@ -14,6 +14,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
+    <style>
+        #s{
+            text-decoration: none;
+        }
+        #s:hover{
+            text-decoration: none;
+            color: white
+        }
+        #b{
+            text-decoration: none;
+        }
+        #b:hover{
+            text-decoration: none;
+            color: white
+        }
+    
+    </style>
 
 </head>
 
@@ -133,15 +150,15 @@
                     <fieldset>
                         <legend>Optional Information</legend>
                         <label for="comments">Comments: </label>
-                        <textarea name="comments" id="comments" placeholder="If you choose &quotother&quot from above, please specify here"></textarea><br>
+                        <textarea name="comments" id="comments" placeholder="If you have additional comments, please specify here"></textarea><br>
                         <br />
                     </fieldset>
                     <br />
                 </div>
 
-                <button type="submit" class="btn btn-success" id="submit"><a href="Application_SubmitApplication_ApplicationConfirmation.html" class="whiteLink">Submit</a></button>
+                <a href="Application_SubmitApplication_ApplicationConfirmation.html" class="whiteLink" id="s"><button type="submit" class="btn btn-success" id="submit">Submit</button></a>
                 <input class="btn btn-warning" type="reset" value="Reset" id="reset"><br />
-                <button type="button" class="btn btn-danger" id="back"><a href="index.html" class="whiteLink">Back</a></button>
+                <a href="index.html" class="whiteLink" id="b"><button type="button" class="btn btn-danger" id="back">Back</button></a>
 
             </form>
             <br />

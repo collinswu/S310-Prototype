@@ -16,12 +16,13 @@
     </script>
 
 </head>
-	<body>
+
+<body>
 
     <div id="menu">
         <header class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A; justify-content-between">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
                     </a>
@@ -33,33 +34,38 @@
                         </button>
                     </div>
 
-                   <div class="collapse navbar-collapse" id="Menu">
+                    <div class="collapse navbar-collapse" id="Menu">
                         <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
 
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                     <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
-                                    <li><a href="NewClient.html" class="nav-link">New Client Registration</a></li>
-                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
-                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                    <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="newClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="agenda.html" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="clientInterview.html" class="nav-link">Record Client Interview Summary</a></li>
+                                    <li><a href="studentInterview.html" class="nav-link">Record Student Interview Summary</a></li>
                                     <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
-                                    <li><a href="#" class="nav-link">Create Task</a></li>
-                                    <li><a href="#" class="nav-link">Update Task</a></li>
-                                    <li><a href="#" class="nav-link">Accept or reject client</a></li>
-                                    <li><a href="Confirm_Final_Report.html" class="nav-link">Confirm Final Report</a></li>
+                                    <li><a href="create_task.html" class="nav-link">Create Task</a></li>
+                                    <li><a href="update_task.html" class="nav-link">Update Task</a></li>
+                                    <li><a href="a_or_r_client.html" class="nav-link">Accept or Reject Client</a></li>
+                                    <li><a href="Accept_Reject-Student_Form.html" class="nav-link">Accept or Reject Student</a></li>
                                     <li><a href="Create_Progress_Report.html" class="nav-link">Create Progress Report</a></li>
+                                    <li><a href="CheckLTStatus.html" class="nav-link">Confirm Deliverable</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
-                              <li class="nav-item dropdown">  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span></a>
-                               <ul class="dropdown-menu">
-                                     <li><a href="Record_Student_Preferences.html" class="nav-link">Record Student Preferences</a></li>
-                               </ul> 
+                            <li class="nav-item"><a href="Professor_ProfessorDashboard.html" class="nav-link">Professor</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Student_SubmitPeerEvaluation.html" class="nav-link">Submit Peer Evaluation</a></li>
+                                    <li><a href="Record_Student_Preferences.html" class="nav-link">Record Student Preference</a></li>
+
+                                </ul>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                            <li class="nav-item"><a href="Application_SubmitApplication.html" class="nav-link">Application</a></li>
                         </ul>
 
                         <form class="form-inline">
@@ -92,13 +98,13 @@
                     </header>
                 </div>
             </div>
-             <br>
-	    <br>
+            <br>
+            <br>
             <div class="row">
                 <table class="table table-hover table-striped table-bordered table-condensed" style="width: 750px;margin-left:auto;margin-right:auto;">
                     <thead style="background-color: #990000; color: white;">
                         <tr>
-                            <th scope="col"></th>
+                            <th scope="col">Select</th>
                             <th scope="col">First Name</th>
                             <th scope="col">Last Name</th>
                             <th scope="col">Major</th>
@@ -108,71 +114,71 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Daniel</td>
                             <td scope="row">Carmichael</td>
                             <td scope="row">Finance</td>
                             <td scope="row">DanCarm@iu.edu</td>
                             <td scope="row">281-883-2917</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Gregory</td>
                             <td scope="row">McKellar</td>
                             <td scope="row">Marketing</td>
                             <td scope="row">Gre12@iu.edu</td>
                             <td scope="row">785-746-1092</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Lisa</td>
                             <td scope="row">Myatt</td>
                             <td scope="row">Accounting & Finance</td>
                             <td scope="row">LMyatt@iu.edu/td>
                             <td scope="row">484-996-3659</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Robinette</td>
                             <td scope="row">Forest</td>
                             <td scope="row">Information Systems</td>
                             <td scope="row">RobFor@iu.edu</td>
                             <td scope="row">860-943-0336</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Philippine</td>
                             <td scope="row">Gaillard</td>
                             <td scope="row">Supply Chain</td>
                             <td scope="row">Phil23@iu.edu</td>
                             <td scope="row">605-575-0062</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Andrew</td>
                             <td scope="row">Polyakov</td>
                             <td scope="row">Informatics</td>
                             <td scope="row">AndPol@iu.edu</td>
                             <td scope="row">605-575-0062</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Philippine</td>
                             <td scope="row">Gaillard</td>
                             <td scope="row">Supply Chain</td>
                             <td scope="row">Phil23@iu.edu</td>
                             <td scope="row">605-575-0062</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Dana</td>
                             <td scope="row">Kharlamova</td>
                             <td scope="row">Finance & Supply Chain</td>
                             <td scope="row">kd98@iu.edu</td>
                             <td scope="row">619-946-1731</td>
                         </tr>
-                         <tr>
-                            <th scope="row" class= "text-center"><input type="checkbox"/></th>
+                        <tr>
+                            <th scope="row" class="text-center"><input type="checkbox" /></th>
                             <td scope="row">Aase</td>
                             <td scope="row">Jeppesen</td>
                             <td scope="row">Computer Science</td>
@@ -182,12 +188,12 @@
                     </tbody>
                 </table>
             </div>
-            
+
             <div class="row" style="text-align: center">
-            <a class="btn btn-lg btn-success" style="float:center" role='button' href="AssignT.html">Back</a>
-                
-            <a class="btn btn-primary btn-lg" style="float:center" role="button" href="LTlist.html">Next</a>
-               	<br>
+                <a class="btn btn-lg btn-success" style="float:center" role='button' href="AssignT.html">Back</a>
+
+                <a class="btn btn-primary btn-lg" style="float:center" role="button" href="LTlist.html">Next</a>
+                <br>
                 <br>
             </div>
         </div>

@@ -261,7 +261,8 @@ label {
     text-align: center;
 }
 
-#studentInterview th,th{
+#studentInterview th,
+th {
     width: 300px;
     text-align: center;
 }

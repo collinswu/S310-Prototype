@@ -15,62 +15,64 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
     <style>
-        h3{
+        h3 {
             margin: 1px 1px 1px 1px;
             padding: 0px;
             text-align: center;
             font-size: 150%;
-            font:bold
-            
+            font: bold
         }
-        
-      
-        .roster{
+
+
+        .roster {
             border: none;
             background-color: lightgray;
             border-radius: 8px;
             padding: 5px 10px 5px 10px;
-            margin: 10px 
-            
-            
+            margin: 10px
         }
-        botton{
-            
+
+        botton {
+
             border: none;
             border-radius: 4px;
             padding: 15px 20px 15px 20px;
             background-color: #71120A;
             color: white;
             font-size: 20px;
-            
+
             margin-right: 17px;
-        
+
 
         }
-        #botton{
+
+        #botton {
             color: white;
             text-decoration: none;
-           
-                
+
+
         }
-        #margin{
-            
+
+        #margin {
+
             margin-top: 100px;
             margin-bottom: 100px;
-     
+
         }
-        #message{
+
+        #message {
             text-align: center;
             margin-top: 100px;
             margin-bottom: 150px;
         }
-        
-        #check{
+
+        #check {
             height: 50px
         }
-        #return{
-            
-            float:right;
+
+        #return {
+
+            float: right;
             height: 40px;
             width: 100px;
             border-radius: 4px;
@@ -78,30 +80,34 @@
             background-color: #71120A;
             margin-bottom: 50px;
             margin-left: 25px;
-            
+
         }
-        #return1{
+
+        #return1 {
             margin-right: 50px;
         }
-        #link{
+
+        #link {
             font-size: 15px;
-            
+
         }
-        #link:hover{
+
+        #link:hover {
             text-decoration: none;
             color: white
         }
-       
+
     </style>
 
 </head>
 
 <body>
 
+
     <div id="menu">
         <header class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A; justify-content-between">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
                     </a>
@@ -120,18 +126,34 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="NewClient" class="nav-link" id="d">New Client Registration</a></li>
-                                    <li><a href="#" class="nav-link" id="d">Record Meeting Agenda</a></li>
-                                    <li><a href="#" class="nav-link" id="d">Record Interview Summary</a></li>
+                                    <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="newClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="agenda.html" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="clientInterview.html" class="nav-link">Record Client Interview Summary</a></li>
+                                    <li><a href="studentInterview.html" class="nav-link">Record Student Interview Summary</a></li>
+                                    <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
+                                    <li><a href="create_task.html" class="nav-link">Create Task</a></li>
+                                    <li><a href="update_task.html" class="nav-link">Update Task</a></li>
+                                    <li><a href="a_or_r_client.html" class="nav-link">Accept or Reject Client</a></li>
+                                    <li><a href="Accept_Reject-Student_Form.html" class="nav-link">Accept or Reject Student</a></li>
+                                    <li><a href="Create_Progress_Report.html" class="nav-link">Create Progress Report</a></li>
+                                    <li><a href="CheckLTStatus.html" class="nav-link">Confirm Deliverable</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                            <li class="nav-item"><a href="Professor_ProfessorDashboard.html" class="nav-link">Professor</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Student_SubmitPeerEvaluation.html" class="nav-link">Submit Peer Evaluation</a></li>
+                                    <li><a href="Record_Student_Preferences.html" class="nav-link">Record Student Preference</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="Application_SubmitApplication.html" class="nav-link">Application</a></li>
                         </ul>
 
-                        <form class="form-inline my-2 my-lg-0">
+                        <form class="form-inline">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
@@ -157,16 +179,16 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <header id="message">
                         <img src="images/Green%20Check%20Sign.png" alt=" " id="check">
-                        <h2 >Member Added!</h2>
-                        
+                        <h2>Member Added!</h2>
+
                     </header>
                 </div>
                 <div id=return1>
-                   <a href="Professor_ProfessorDashboard_ManageLTMember.html" class="whiteLink" id="link"><button type="button" id="return">Back</button></a>
+                    <a href="Professor_ProfessorDashboard_ManageLTMember.html" class="whiteLink" id="link"><button type="button" id="return">Back</button></a>
                     <br>
-                
+
                 </div>
-           
+
             </div>
         </div>
     </section>

@@ -1,0 +1,4 @@
+- new client reset button
+- agenda reset button
+- checkLTStatus
+

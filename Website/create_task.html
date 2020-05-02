@@ -15,21 +15,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
     </script>
     <style>
-        fieldset.scheduler-border{
-        border: solid 1px;
-        padding: 0 10px 10px 10px;
-        border-color: #990000;
-    }
-    legend.scheduler-border{
-        width: auto;
-        border: solid #990000 1px;
-        font-size: 17px;
-        background-color: #990000;
-        color: white;
-        font-weight: bold;
-      border-radius: 7px;
-    }
-        </style>
+        fieldset.scheduler-border {
+            border: solid 1px;
+            padding: 0 10px 10px 10px;
+            border-color: #990000;
+        }
+
+        legend.scheduler-border {
+            width: auto;
+            border: solid #990000 1px;
+            font-size: 17px;
+            background-color: #990000;
+            color: white;
+            font-weight: bold;
+            border-radius: 7px;
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
     <div id="menu">
         <header class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A;">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#71120A; justify-content-between">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo.jpeg" width="30" height="30" alt="IULogo">
                     </a>
@@ -49,27 +52,38 @@
                         </button>
                     </div>
 
-                   <div class="collapse navbar-collapse" id="Menu">
+                    <div class="collapse navbar-collapse" id="Menu">
                         <ul class="nav navbar-nav mr-auto">
                             <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
 
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leadership Team <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                     <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
-                                    <li><a href="NewClient.html" class="nav-link">New Client Registration</a></li>
-                                    <li><a href="#" class="nav-link">Record Meeting Agenda</a></li>
-                                    <li><a href="#" class="nav-link">Record Interview Summary</a></li>
+                                    <li><a href="login2.html" class="nav-link">Leadership Team Login</a></li>
+                                    <li><a href="newClient.html" class="nav-link">New Client Registration</a></li>
+                                    <li><a href="agenda.html" class="nav-link">Record Meeting Agenda</a></li>
+                                    <li><a href="clientInterview.html" class="nav-link">Record Client Interview Summary</a></li>
+                                    <li><a href="studentInterview.html" class="nav-link">Record Student Interview Summary</a></li>
                                     <li><a href="AssignT.html" class="nav-link">Assign Teams & Team Lead</a></li>
                                     <li><a href="create_task.html" class="nav-link">Create Task</a></li>
-                                    <li><a href="#" class="nav-link">Update Task</a></li>
-                                    <li><a href="#" class="nav-link">Accept or reject client</a></li>
+                                    <li><a href="update_task.html" class="nav-link">Update Task</a></li>
+                                    <li><a href="a_or_r_client.html" class="nav-link">Accept or Reject Client</a></li>
+                                    <li><a href="Accept_Reject-Student_Form.html" class="nav-link">Accept or Reject Student</a></li>
+                                    <li><a href="Create_Progress_Report.html" class="nav-link">Create Progress Report</a></li>
+                                    <li><a href="CheckLTStatus.html" class="nav-link">Confirm Deliverable</a></li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item"><a href="#" class="nav-link">Professor</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Student</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Application</a></li>
+                            <li class="nav-item"><a href="Professor_ProfessorDashboard.html" class="nav-link">Professor</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Student_SubmitPeerEvaluation.html" class="nav-link">Submit Peer Evaluation</a></li>
+                                    <li><a href="Record_Student_Preferences.html" class="nav-link">Record Student Preference</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="Application_SubmitApplication.html" class="nav-link">Application</a></li>
                         </ul>
 
                         <form class="form-inline">
@@ -107,63 +121,63 @@
                 <legend class="scheduler-border" style="text-align: center">Task ID</legend>
                 <label for="taskid">Task ID</label>
                 <label>SP20-01</label>
-            <fieldset class="scheduler-border">
-            
-                <legend class="scheduler-border"> Choose One Category From List </legend>
+                <fieldset class="scheduler-border">
+
+                    <legend class="scheduler-border"> Choose One Category From List </legend>
                     <label for="category">Task Category</label>
                     <select name="category" id="category" class="custom-select">
-                        <option></option>
+                        <option>Select</option>
                         <option>Student Selection</option>
                         <option>Client Selection</option>
                         <option>Syllabus Preparation</option>
                         <option>Course Logisitics</option>
                         <option>In-country Logistics</option>
                     </select>
+                    <br>
+                </fieldset>
                 <br>
-            </fieldset>
                 <br>
-                <br>
-            <fieldset class="scheduler-border">
-                <legend class="scheduler-border">Adding Details</legend>
-                
-                <div class="form-group">
-                <label for="lead">Person In Charge</label>
-                <input type="text" id="lead" name="lead" placeholder="Please enter who is in charge" required size="50">
-                </div>
-                
-                 <div class="form-group">
-                <label for="taskname">Task Name</label>
-                <input type="text" id="taskname" name="taskname" placeholder="Please enter your task name" required size="50">
-                </div>
-                
-                <div class="form-group">
-                <label for="des">Task Description</label>
-                <textarea  id="des" name="des" rows='4' cols="45" placeholder="Please describe your task"></textarea>
-                </div>
-                
-                <div class="form-group">
-                <label for="stime">Start Time</label>
-                <input class="date" type="date" id="stime" name="stime" required>
-                </div>
-                
-                <div class="form-group">
-                <label for="ftime">Finish Time</label>
-                <input class="date" type="date" id="ftime" name="ftime" required>
-                </div>
-                
-                <div class="form-group">
-                <label for="status">Status</label>
-                <select  id="status" name="status">
-                    <option></option>
-                    <option>Not Started</option> 
-                    <option>In Process</option> 
-                    <option>Completed</option> 
-                </select>
-                </div>
-            </fieldset>
+                <fieldset class="scheduler-border">
+                    <legend class="scheduler-border">Adding Details</legend>
+
+                    <div class="form-group">
+                        <label for="lead">Person In Charge</label>
+                        <input type="text" id="lead" name="lead" placeholder="Please enter who is in charge" required size="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskname">Task Name</label>
+                        <input type="text" id="taskname" name="taskname" placeholder="Please enter your task name" required size="50">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="des">Task Description</label>
+                        <textarea id="des" name="des" rows='4' cols="45" placeholder="Please describe your task"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stime">Start Time</label>
+                        <input class="date" type="date" id="stime" name="stime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ftime">Finish Time</label>
+                        <input class="date" type="date" id="ftime" name="ftime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option></option>
+                            <option>Not Started</option>
+                            <option>In Process</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </fieldset>
                 <br>
                 <div style="text-align: center">
-                <a role="button" href="create_task_example.html" class="btn btn-primary btn-lg">Next</a>
+                    <a role="button" href="create_task_example.html" class="btn btn-primary btn-lg">Next</a>
                 </div>
             </form>
 
